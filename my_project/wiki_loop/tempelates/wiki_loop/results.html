@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wikipedia Loop Checker Results</title>
+</head>
+<body>
+    <h1>Wikipedia Loop Checker Results</h1>
+    <p>Number of requests required to reach Philosophy: {{ num_requests }}</p>
+    <h2>Visited Pages:</h2>
+    <ul>
+        {% for page in visited_pages %}
+            <li><a href="{{ page }}" target="_blank">{{ page }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

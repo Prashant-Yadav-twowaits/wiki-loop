@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wikipedia Loop Checker</title>
+</head>
+<body>
+    <h1>Wikipedia Loop Checker</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label for="wikipedia_url">Enter Wikipedia URL:</label><br>
+        <input type="text" id="wikipedia_url" name="wikipedia_url"><br><br>
+        <button type="submit">Check</button>
+    </form>
+</body>
+</html>
